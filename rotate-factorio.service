@@ -1,0 +1,12 @@
+[Unit]
+Description=Weekly factorio save rotation
+Requires=docker.service
+
+[Service]
+WorkingDirectory=/opt/rotate-factorio
+User=root
+ExecStart=/opt/rotate-factorio/rotate.sh
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target

@@ -71,9 +71,9 @@ if ( !$keep_map_settings ) {
   $j['autoplace_controls']['crude-oil']['size'] = mt_rand( 3, 6 );
   $j['autoplace_controls']['crude-oil']['richness'] = mt_rand( 3, 6 );
 
-  $j['autoplace_controls']['trees']['frequency'] = mt_rand( 1, 3 );
-  $j['autoplace_controls']['trees']['size'] = mt_rand( 1, 4 );
-  $j['autoplace_controls']['trees']['richness'] = mt_rand( 1, 4 );
+  $j['autoplace_controls']['trees']['frequency'] = mt_rand( 100, 200 ) / 100;
+  $j['autoplace_controls']['trees']['size'] = mt_rand( 100, 200 ) / 100;
+  $j['autoplace_controls']['trees']['richness'] = mt_rand( 100, 200 ) / 100;
 
   /*
   $j['autoplace_controls']['enemy-base']['frequency'] = mt_rand( 1, 6 );
@@ -117,7 +117,7 @@ $j['tags'] = [
   '[color=yellow]~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[/color]',
   '   [color=yellow]Resets Weekly on Tuesday, 7:00am US/Eastern[/color]   ',
   '[color=yellow]~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[/color]',
-  '[color=red][font=default-bold]Settings of the Week:[/font][/color]',
+  '[color=red][font=default-bold]Settings of the Week:[/font][/color] (Freq./Size/Richness)',
   ' • [font=default-bold]Starting area:[/font] ' . $mapgen['starting_area'],
   ' • [font=default-bold]Coal:[/font] ' . ore_ratio( $mapgen['autoplace_controls']['coal'] ),
   ' • [font=default-bold]Stone:[/font] ' . ore_ratio( $mapgen['autoplace_controls']['stone'] ),

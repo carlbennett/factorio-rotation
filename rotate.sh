@@ -16,7 +16,7 @@ docker rm factorio || echo -e '\033[31mFailed to remove factorio server.\033[0m'
 # ---
 echo -e '\033[33m>> Backing up factory config and saves...\033[0m'
 pushd /opt/factorio
-tar -cvzf "/opt/rotate-factorio/saves/`date +%Y-%m-%d`.tgz" \
+tar -cvzf "/opt/rotate-factorio/saves/`date +%Y-%m-%d_%H:%M:%S_%Z`.tgz" \
   config/map-gen-settings.json \
   config/map-settings.json \
   saves

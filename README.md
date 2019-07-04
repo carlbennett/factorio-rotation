@@ -11,9 +11,9 @@ Both the upstream project and this project are MIT-licensed. See [LICENSE](./LIC
 5. Start the rotation timer: `systemctl start rotate-factorio.timer`
 
 ## Requirements
-* A Linux server running SystemD, such as a modern version of Fedora/CentOS/RHEL.
+* A Linux server running SystemD, such as a modern version of Fedora/CentOS/RHEL
 * [Docker](https://docs.docker.com/install/)
-* Bash.
+* Bash
 * The php-cli and php-json packages, for using `config.php` \*
 
 \* I plan to convert this script to a more native language at a future date, so that php-cli is no longer required.

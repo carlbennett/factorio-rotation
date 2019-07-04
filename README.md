@@ -1,7 +1,7 @@
 # Factorio Rotation
 Automates the [factoriotools/factorio](https://hub.docker.com/r/factoriotools/factorio) ([source](https://github.com/factoriotools/factorio-docker)) docker container by refreshing the current map/factory at a set interval. This project provides a configuration and set of scripts that allow a user to maintain a Factorio server easily.
 
-Both the upstream project and this project are MIT-licensed. See [README](./README.md) for more info.
+Both the upstream project and this project are MIT-licensed. See [LICENSE](./LICENSE.txt) for more info.
 
 ## Quick Start
 1. Clone this repository: `git clone https://github.com/carlbennett/factorio-rotation.git /opt/rotate-factorio`

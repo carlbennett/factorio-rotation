@@ -93,10 +93,7 @@ if ( !$keep_map_settings ) {
 # ---
 
 function ore_ratio( &$keys ) {
-  $freq     = $keys['frequency'];
-  $size     = $keys['size'];
-  $richness = $keys['richness'];
-  return $freq . '/' . $size . '/' . $richness;
+  return sprintf( '%s/%s/%s', $keys['frequency'], $keys['size'], $keys['richness'] );
 }
 
 $f = 'server-settings.json';
